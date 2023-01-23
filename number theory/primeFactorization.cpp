@@ -18,17 +18,17 @@ void primeFact(int n)
         }
     }
     if(n>1)
-        {
-            primeFactors.push_back({n,1});
-        }
-}
-    int main()
     {
-        int n;
-        cin >> n;
-        primeFact(n);
-        for(auto i:primeFactors)
-        {
-            cout << i.first<<"^"<<i.second<<" ";
-        }
+        primeFactors.push_back({n,1});
     }
+}
+int main()
+{
+    int n;
+    cin >> n;
+    primeFact(n);
+    for(auto i:primeFactors)
+    {
+        cout << i.first<<"^"<<i.second<<" ";
+    }
+}
