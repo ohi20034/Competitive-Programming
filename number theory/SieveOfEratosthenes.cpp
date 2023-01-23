@@ -2,7 +2,7 @@
 using namespace std;
 const int MAX = 10000000; /// 10^7
 bool prime[MAX+5];
-void sieve1()
+void sieve()
 {
     memset(prime, true, sizeof prime);
 
